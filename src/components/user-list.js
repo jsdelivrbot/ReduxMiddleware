@@ -9,7 +9,7 @@ class UserList extends Component {
 
     renderUser(user) {
         return (
-            <div className="card card-block">
+            <div key={Math.random()} className="card card-block">
                 <h4 className="card-title">{user.name}</h4>
                 <p className="card-text">{'10th Planet BJJ'}</p>
                 <a className="btn btn-primary">{'Email'}</a>
@@ -19,7 +19,7 @@ class UserList extends Component {
 
     render() {
         return (
-            <div className="User-list">
+            <div className="user-list">
                 {this.props.users.map(this.renderUser)}
             </div>
         );
