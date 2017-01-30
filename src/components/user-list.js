@@ -12,7 +12,7 @@ class UserList extends Component {
             <div key={Math.random()} className="card card-block">
                 <h4 className="card-title">{user.name}</h4>
                 <p className="card-text">{user.company.name}</p>
-                <a className="btn btn-primary">{'Email'}</a>
+                <a className="btn btn-primary" href={user.website}>{'Website'}</a>
             </div>
         );
     }
