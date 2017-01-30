@@ -11,7 +11,7 @@ class UserList extends Component {
         return (
             <div key={Math.random()} className="card card-block">
                 <h4 className="card-title">{user.name}</h4>
-                <p className="card-text">{'10th Planet BJJ'}</p>
+                <p className="card-text">{user.company.name}</p>
                 <a className="btn btn-primary">{'Email'}</a>
             </div>
         );
